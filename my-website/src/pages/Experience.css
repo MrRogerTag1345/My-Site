@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(17, 17, 17);
+    color: solid white;
+}
+
+.custom-button-1{
+  background-color: #748580; /* Match the background color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.custom-button-2{
+  background-color: #748580; /* Match the background color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.custom-button-1:hover {
+  background-color: white; 
+  color: #2196f3; 
+  border: 2px solid #2196f3;
+}
+
+
+.custom-button-2:hover {
+  background-color: white; 
+  color: #010101; 
+  border: 2px solid #010101;
+}

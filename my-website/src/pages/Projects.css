@@ -1,0 +1,113 @@
+/* Projects.css */
+
+.page-container {
+  display: flex;
+  background-color: rgb(17, 17, 17); /* Page background */
+}
+
+.sidebar {
+  width: 250px; /* Adjust the width of the sidebar as needed */
+  background-color: #2c2c2c; /* Sidebar background */
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px; /* Sidebar margin-top */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
+.projects-content {
+  flex: 1;
+  background-color: rgb(17, 17, 17); /* Matches the background color */
+  color: #e0e0e0; /* Light text color for contrast */
+  padding: 20px;
+  min-height: 100vh; /* Ensure the content area takes up at least full viewport height */
+}
+
+.projects-content h1,
+.projects-content h2 {
+  color: #ffffff; /* White color for the title text */
+  padding-left: 250px;
+  text-align: center;
+  margin-bottom: 20px; /* Space below the title */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background-color: rgb(17, 17, 17); /* Same as page background */
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2c2c2c; /* Slightly lighter background for the grid items */
+  color: #e0e0e0; /* Light text color for grid items */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-left: 30px; /* Move items further right */
+}
+
+.grid-item:hover {
+  transform: translateY(-5px); /* Lift item slightly on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+.grid-button {
+  display: inline-block;
+  padding: 10px 20px; /* Button padding */
+  background-color: #007bff; /* Button color */
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-bottom: 10px; /* Space below button */
+  border: 2px solid transparent; /* Add border */
+}
+
+.grid-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  border: 2px solid #007bff; /* Change border color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+.additional-buttons {
+  display: flex;
+  gap: 10px; /* Space between additional buttons */
+  margin-top: 10px; /* Space above additional buttons */
+}
+
+.additional-button {
+  display: inline-block;
+  padding: 6px 12px; /* Button padding */
+  background-color: #28a745; /* Button color */
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 12px; /* Font size */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border: 2px solid transparent; /* Add border */
+}
+
+.additional-button:hover {
+  background-color: #218838;
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  border: 2px solid #28a745; /* Change border color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+p {
+  margin: 10px 0; /* Space around paragraph */
+  font-size: 14px; /* Font size */
+  text-align: center;
+  color: #e0e0e0; /* Light text color */
+  line-height: 1.5; /* Improve readability */
+}
