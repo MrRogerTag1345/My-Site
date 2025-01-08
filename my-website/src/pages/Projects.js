@@ -9,7 +9,7 @@ const Projects = () => {
       url: '',
       description: "This webpage is my introduction to creating Webpages using HTML and CSS. This website was create to track fuel expenses per communite to school and back. Since I communite to school(waterloo) during the weekdays, I have driven thousands' of kilometres. In order to track my monthly expenses, and to inform me about how much I am spending on fuel. This website give's me a break down of all the information I would need.",
       additionalLinks: [
-        { text: 'More Info', url: '/Fuel-Economy-Calculator/info' }, // Will have to add an info page.
+        { text: 'Website', url: 'https://mrrogertag1345.github.io/Fuel-Economy-Logger/index.html', external: true  }, 
         { text: 'GitHub', url: 'https://github.com/MrRogerTag1345/Fuel-Economy-Logger', external: true }
       ]
     },
