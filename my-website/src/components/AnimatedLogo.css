@@ -1,0 +1,32 @@
+.logo {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.line1, .line2 {
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background-color: #fff;
+  transition: transform 0.3s ease-out;
+}
+
+.line1 {
+  top: 0;
+  transform-origin: center;
+}
+
+.line2 {
+  bottom: 0;
+  transform-origin: center;
+}
+
+.open .line1 {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.open .line2 {
+  transform: translateY(-9px) rotate(-45deg);
+}

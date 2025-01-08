@@ -1,0 +1,68 @@
+body {
+    margin: 0; /* Remove default margin */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure minimum full viewport height */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.particles-section {
+    position: relative;
+    height: 100vh; /* Adjust height to be 100% of viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.intro-content {
+    position: absolute;
+    top: 30%; /* Adjust vertical position as needed */
+    left: 0;
+    width: 100%; /* Ensure full width */
+    text-align: center;
+    color: white;
+    z-index: 2;
+    padding: 2rem; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.AboutMe-section {
+    padding: 2rem;
+    background-color: #ffffff; /* Solid white background */
+    z-index: 3; /* Adjust z-index as needed */
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Style for About Me content */
+.about-me-content {
+    max-width: 800px; /* Limit the width of the About Me content */
+    margin: 0 auto; /* Center align the content */
+}
+
+.AboutMe-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #000000;
+}
+
+.AboutMe-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: justify;
+    color: #000000;
+}
+
+.AboutMe-section p:last-child {
+    margin-bottom: 0;
+}

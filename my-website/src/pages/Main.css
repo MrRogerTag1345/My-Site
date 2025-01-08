@@ -1,0 +1,61 @@
+
+body {
+    margin: 0; /* Remove default margin */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Main container */
+.website {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure minimum full viewport height */
+    width: 100vw; /* Full viewport width */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Main content container */
+.content {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    width: 100%; /* Ensure full width */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    background-color: rgb(17, 17, 17);
+}
+
+/* Main content area */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ensure full width */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Header */
+.header {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    padding: 20px;
+    text-align: left;
+    width: 100%; /* Ensure full width */
+    z-index: 50; /* Ensure header is below sidebar */
+    position: relative; /* Ensures stacking context */
+}
+
+/* Sidebar */
+.sidebar {
+    z-index: 2; /* Ensure sidebar is above the particle background */
+    width: 15%; /* Ensure full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Home Page */
+.home-page {
+    flex: 1;
+    position: relative;
+    z-index: 1; /* Ensure content is above the particle background */
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}

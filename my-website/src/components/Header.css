@@ -1,0 +1,95 @@
+.header {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    padding: 10px 20px; /* Adjust padding as needed */
+    text-align: left; /* Align text to the left */
+    position: fixed;
+    width: 100%; /* Full width */
+    top: 0; /* Stick to the top */
+    display: flex;
+    justify-content: space-between; /* Align items to the ends */
+    align-items: center; /* Center vertically */
+    z-index: 1000; /* Ensure it's on top of other content */
+}
+
+.TitleSpan {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem; /* Adjust font size as needed */
+    animation: fadeIn 1s ease-in-out; /* Apply the fade-in animation to the text */
+    display: inline-block; /* Ensure animation affects layout */
+}
+
+.MyName {
+    font-weight: bold; /* Makes the text bold */
+    background: linear-gradient(90deg, rgba(232, 208, 55, 0) 0%, rgba(232, 208, 55, 0.5) 50%, rgba(232, 208, 55, 0) 100%);
+    background-size: 200% 100%;
+    background-clip: text; /* Clip background to text */
+    -webkit-background-clip: text; /* For Safari */
+    color: transparent; /* Hide original text color */
+    animation: leftToRightHighlight 2s ease-in-out forwards, fadeInText 3.5s ease-in-out forwards; /* Apply both animations */
+}
+
+@keyframes leftToRightHighlight {
+    from {
+        background-position: 100% 0;
+    }
+    to {
+        background-position: 0 0;
+    }
+}
+
+@keyframes fadeInText {
+    from {
+        color: transparent; /* Start with transparent text */
+        transform: translateX(-100%);
+    }
+    to {
+        color: #2ebeea; /* End with light blue color */
+        transform: translateX(0); /* Move text back to original position */
+    }
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end; /* Align icons to the right */
+    align-items: center;
+    gap: 10px; /* Adjust space between icons */
+    margin-right: 50px;
+}
+
+.social-icon {
+    color: #ffffff; /* Icon color */
+    font-size: 2rem; /* Icon size */
+    transition: color 0.3s, transform 0.3s; /* Smoth transition for hover effect */
+    margin-right: 10px;
+}
+
+.social-icon:hover {
+    color: #2ebeea; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+#themeToggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #333;
+    color: #f1f1f1;
+}
+
+body.dark-mode .header {
+    background-color: #444;
+}
+
+body.dark-mode .social-icon {
+    color: #f1f1f1;
+}
+
+body.dark-mode .social-icon:hover {
+    color: #ffd700; /* Change hover color in dark mode */
+}
