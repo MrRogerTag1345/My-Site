@@ -1,0 +1,12 @@
+/* src/components/ParticlesBackground.css */
+
+.particles-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a1a2e, #111111); /* Background gradient */
+}

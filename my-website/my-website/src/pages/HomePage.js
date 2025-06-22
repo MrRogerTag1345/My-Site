@@ -2,12 +2,8 @@
 import React from 'react';
 import ParticlesBackground from '../components/ParticlesBackground';
 import './HomePage.css';
-import { Navigate, useNavigate } from 'react-router-dom';
 
 const HomePage = () => {
-
-    const navigate = useNavigate();
-    
     return (
         <div className="home-page">
             <section className="particles-section">
@@ -30,13 +26,6 @@ const HomePage = () => {
                     <p>
                         As I continue my journey in the field of software engineering, I am eager to explore new opportunities, collaborate with like-minded professionals, and further develop my expertise. I am dedicated to continuous learning and strive to stay at the forefront of technological advancements.
                     </p>
-                </div>
-            </section>
-            <section className='Project-Car'>
-                <div className='project-car'>
-                    <h2>The Garage</h2>
-                    <p>Come Check out my Garage.</p>
-                    <button className='GarageButton' onClick={() => navigate('/garage')}>Garage</button>
                 </div>
             </section>
         </div>

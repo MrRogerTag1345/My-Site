@@ -7,7 +7,6 @@ import HomePage from './HomePage';
 import Experience from './Experience';
 import Projects from './Projects';
 import Contact from './Contact';
-import Garage from './Garage';
 import "./Main.css";
 
 const Website = () => {
@@ -22,7 +21,6 @@ const Website = () => {
             <Route path="/experience" element={<Experience />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
-            
           </Routes>
         </div>
       </div>

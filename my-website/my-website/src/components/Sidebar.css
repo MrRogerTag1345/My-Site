@@ -1,0 +1,89 @@
+.sidebar {
+  position: fixed;
+  width: 250px; /* Increased width for better content fit */
+  height: auto; /* Adjust height based on content */
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Softer shadow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 20px; /* Adjusted margin for better alignment */
+  z-index: 2;
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 600px) {
+  .sidebar {
+    width: 200px; /* Reduce width for smaller screens */
+    margin-left: 10px; /* Adjust for smaller screens */
+  }
+}
+
+.Sidebar-TopElement {
+  display: flex;
+  align-items: center; /* Vertically center the items */
+  width: 100%;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.SidebarImageComponent {
+  margin-right: 15px; /* Increased space between the image and text */
+}
+
+.Image {
+  height: 70px; /* Slightly larger for better visibility */
+  width: 70px;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); /* Gradient background */
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+  outline: 4px solid #2ebeea; /* Outline color */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* More prominent shadow */
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transitions */
+}
+
+.Image:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.ButtonElement {
+  margin-top: 20px;
+  width: 100%; /* Ensure buttons take full width */
+}
+
+.SidebarButton {
+  background-color: #333; /* Darker background for better contrast */
+  color: white;
+  border: none;
+  border-radius: 12px; /* Slightly rounded corners */
+  padding: 12px 20px; /* Adjusted padding for better fit */
+  margin-bottom: 10px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem; /* Slightly smaller font size */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.SidebarButton:hover {
+  background-color: #444; /* Darker background on hover */
+  transform: translateY(-2px); /* Slight hover effect */
+}
+
+.SidebarButton:active {
+  background-color: #555; /* Darker background on click */
+  transform: translateY(0); /* Reset transform on click */
+}
+
+.SidebarButton h2 {
+  margin: 0;
+  font-size: 1.2rem; /* Adjusted font size */
+  flex: 1;
+  padding-left: 10px; /* Padding to align text */
+}
+

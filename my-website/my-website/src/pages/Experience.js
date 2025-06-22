@@ -20,7 +20,7 @@ const Experience = () => {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date={<span style={{ color: 'white' }}>2020 - 2025</span>}
+          date={<span style={{ color: 'white' }}>2020 - present</span>}
           contentStyle={{ background: 'rgb(33, 150, 243)', color: '#ffffff' }}
           contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
           iconStyle={{ background: 'rgb(233, 30, 99)', color: '#ffffff' }}

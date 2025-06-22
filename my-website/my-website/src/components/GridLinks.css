@@ -1,0 +1,72 @@
+/* GridLinks.css */
+
+.grid-wrapper {
+  padding-left: 250px; /* Adjust this value to move the grid-container to the right */
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 15px;
+  background-color: rgb(17, 17, 17);
+}
+
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.grid-button {
+  display: inline-block;
+  padding: 8px 16px; /* Reduced button padding */
+  background-color: #007bff; /* Button color */
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-bottom: 8px; /* Reduced margin-bottom */
+}
+
+.grid-button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  margin: 8px 0; /* Reduced margin */
+  font-size: 12px; /* Reduced font size */
+  text-align: center;
+  color: #e0e0e0; /* Light text color for contrast */
+}
+
+.additional-buttons {
+  display: flex;
+  gap: 8px; /* Reduced gap between additional buttons */
+}
+
+.additional-button {
+  display: inline-block;
+  padding: 4px 8px; /* Reduced button padding */
+  background-color: #28a745; /* Button color */
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 10px; /* Reduced font size */
+  transition: background-color 0.3s ease;
+}
+
+.additional-button:hover {
+  background-color: #218838;
+}
