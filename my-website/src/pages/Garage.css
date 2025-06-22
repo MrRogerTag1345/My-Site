@@ -1,3 +1,5 @@
+/* Prefix everything with .garage-container to scope styles */
+
 .garage-container {
     max-width: 800px;
     margin: 2rem auto;
@@ -6,31 +8,33 @@
     color: #111;
 }
 
-h1, h2 {
+.garage-container h1, 
+.garage-container h2 {
     text-align: center;
     margin-bottom: 1rem;
 }
 
-.gallery-grid {
+.garage-container .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 1rem;
     margin-top: 1rem;
 }
 
-.gallery-grid img {
+.garage-container .gallery-grid img {
     width: 100%;
     height: auto;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
     transition: transform 0.3s;
 }
 
-.gallery-grid img:hover {
+.garage-container .gallery-grid img:hover {
     transform: scale(1.03);
 }
 
-section {
+.garage-container section {
     margin: 2rem 0;
     padding: 1.5rem;
     background-color: #f9f9f9;
@@ -38,11 +42,51 @@ section {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-ul {
+.garage-container ul {
     padding-left: 1.5rem;
     list-style-type: disc;
 }
 
-p {
-    color: black;
+/* Overlay styles for enlarged image */
+.garage-container .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.garage-container .enlarged-container {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.garage-container .enlarged-container img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.garage-container .close-button {
+    position: absolute;
+    top: -16px;
+    right: -16px;
+    background: white;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0.2rem 0.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.garage-container p {
+    color: black
 }
